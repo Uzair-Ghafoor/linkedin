@@ -70,7 +70,7 @@ const PostCreation = ({ user }) => {
         <img
           src={user.profilePicture || '/avatar.png'}
           alt={user.name}
-          className='size-12 rounded-full'
+          className='size-12 object-cover rounded-full'
         />
         <textarea
           placeholder="What's on your mind?"
@@ -93,7 +93,7 @@ const PostCreation = ({ user }) => {
       <div className='flex justify-between items-center mt-4'>
         <div className='flex space-x-4'>
           <label className='flex items-center text-info hover:text-info-dark transition-colors duration-200 cursor-pointer'>
-            <Image size={20} className='mr-2' />
+            <Image size={20} className='mr-2 ' />
             <span>Photo</span>
             <input
               type='file'
